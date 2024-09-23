@@ -2,7 +2,7 @@ FROM node:17-alpine3.14
 
 LABEL maintainer="Fabio Eduardo"
 
-HEALTHCHECK CMD [ "executable" ] \ 
+HEALTHCHECK CMD  \ 
   curl -sf http://localhost:3000/ || exit 1
 
 VOLUME [ "/var/nodeapp" ]
